@@ -1,0 +1,245 @@
+/* CSS */
+
+body {
+  margin : 0;
+  background-color: white;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* header */
+#header {
+  height: 100vh;
+  
+}
+
+  /* navigation */
+nav {
+  background-color: rgba(255, 255, 255, 0.767);
+  display: flex;
+  align-items: center;
+  height: 85px;
+  padding-left: 30px;
+  padding-right: 30px; 
+  position: fixed;
+  z-index: 1000;
+  top: 0; 
+  right: 0;
+  left: 0;
+}
+
+.logo, .menu {
+  flex: 1;
+  
+}
+
+.logo img {
+  width: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  
+}
+
+nav li {
+  padding: 0 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.6);
+  font-size: 11px;
+  font-family: inherit;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  padding : 37px 0; 
+}
+.menu ul li:nth-child(2) a {
+  display: inline-block;
+  width: 54px;
+  padding-top: 39px;
+  padding-bottom: 36px;
+}
+
+nav li a:hover {
+  color: black;
+}
+
+/* Toggle menu */ 
+.toggleMenu {
+  display: none;
+}
+
+.toggleMenu span {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 3px 0;
+  }
+
+  .toggleMenu div {
+      display: flex;
+      /* display: block; */
+      flex-direction: column;
+      margin-right: 0;  
+      width: 24px;
+      height: 24px;
+         
+  }
+   .toggleMenu div:hover > span:nth-child(2){
+    display: none;
+    /* opacity: 0; */
+
+  }
+   .toggleMenu div:hover > span:nth-child(1){
+        transform: rotate(-45deg) translate(1px, 1px);
+        margin-top: 11px;
+
+  }
+   .toggleMenu div:hover > span:nth-child(3){
+      transform: rotate(45deg) translate(1px, -2px);
+      position: absolute;
+      margin-top: 11px;
+  }
+
+@media only screen and (max-width : 1024px) {
+
+  .toggleMenu {
+    display: block;
+  }
+
+  .menu {
+      /* visibility: hidden; */
+      display: none;
+  }
+}
+
+/* Carousel */
+
+#carousel {
+  padding: 150px 200px 0 200px;
+  margin-bottom: 0;
+  
+}
+
+.bg-header {
+  background-image: url("../images/16.jpg");
+  display: block;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-size: 100%;
+}
+
+.bg-header::before {
+  background-color: rgba(255, 255, 255, 0.4);
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  position: absolute;
+}
+
+.header-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  z-index: 1;
+}
+
+.header-content h5, .header-content h1,.header-content button {
+  flex: 1;
+}
+
+.header-content h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+.header-content h1 {
+  font-size: 70px;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  font-weight: 400;
+  line-height: 1.1;
+  padding: 0 30px;  
+}
+
+.header-content a {
+  border: 1px solid black;
+  padding: 15px 30px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none !important;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.header-content a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Section About */ 
+
+.section-padding {
+  padding: 120px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.about-table, .content-center {
+  flex: 1; 
+}
+
+.content-center {
+  text-align: center; 
+  padding: 0 230px;
+}
+
+.content-center h1 {
+  font-size: 44px;
+  color: #222;
+  font-weight: 500;
+  margin-top: 0px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.content-center p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #626262;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.about-table {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-table1, .about-table2, .about-table3 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.about-table1 i, .about-table2 i, .about-table3 i {
+  font-size: 40px;
+}
