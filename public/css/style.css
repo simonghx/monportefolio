@@ -8,13 +8,13 @@ body {
 
 /* header */
 #header {
-  height: 100vh !important;
+  min-height: 100vh !important;
   
 }
 
   /* navigation */
 nav {
-  background-color: rgba(255, 255, 255, 0.767) !important;
+  background-color: rgba(255, 255, 255, 0.863) !important;
   display: flex !important;
   align-items: center !important;
   height: 85px !important;
@@ -120,15 +120,7 @@ nav li a:hover {
   }
 }
 
-/* Carousel */
-
-#carousel {
-  padding: 150px 200px 0 200px !important;
-  margin-bottom: 0 !important;
-  /* height: 100vh; */
-  
-}
-
+/* Background header */
 .bg-header {
   background-image: url("../images/16.jpg") !important;
   display: block !important;
@@ -138,14 +130,24 @@ nav li a:hover {
 }
 
 .bg-header::before {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.644) !important;
   content: "" !important;
-  width: 100% !important;
-  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
   left: 0 !important;
   top: 0 !important;
   display: block !important;
   position: absolute !important;
+}
+
+
+/* Carousel */
+
+#carousel {
+  padding: 150px 200px 0 200px !important;
+  margin-bottom: 0 !important;
+  /* height: 100vh; */
+  
 }
 
 .header-content {
@@ -210,14 +212,14 @@ nav li a:hover {
 
 }
 
-.about-table, .content-center {
+/* .about-table, .content-center {
   flex: 1 !important; 
-}
+} */
 
-.content-center {
+/* .content-center {
   text-align: center !important; 
   padding: 0 230px !important;
-}
+} */
 
 #about h1 {
   font-size: 44px !important;
@@ -244,7 +246,8 @@ nav li a:hover {
 
 .about-table p {
   font-weight: 300 !important;
-  font-size: 14px;
+  font-size: 15px;
+  
 }
 
 .about-table h4 {
@@ -261,3 +264,64 @@ nav li a:hover {
 }
 
 
+/* Section Skills */
+#skills {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#skills h1 {
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 22px;
+}
+
+#skills h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1;
+  font-size: 14px;
+}
+
+#skills p {
+  font-size: 18px;
+  color: #626262;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+#skills .skillbar h6 {
+  margin-bottom: 7px;
+  text-align: left;
+  display: inline-block; 
+}
+
+.skillbar-percent {
+  float: right;
+  display: inline-block;
+  font-weight: 400;
+  margin-top: 3px;
+  font-size: 14px;
+}
+
+.mt-25 {
+ margin-top : 25px;
+}
+
+.progress {
+  height: 4px;
+  border-radius: 0 !important;
+  
+}
+
+.progress-bar {
+  background-color: #17a697;
+}
+
+.skillbar {
+  margin-bottom: 20px;
+}
