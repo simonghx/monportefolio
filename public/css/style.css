@@ -463,9 +463,11 @@ nav li a:hover {
 
 /* PAGE TRIANGLE */
 
-.triangle {
+.triangle::before {
+  content: "";
   height: 100px;
   width: 100px;
+  left: 47%;
   background-color: #fff;
   transform: translateY(-216%) rotate(45deg);
   position: absolute;
