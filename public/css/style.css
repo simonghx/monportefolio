@@ -162,7 +162,7 @@ nav li a:hover {
 }
 
 .bg-header::before {
-  background-color: rgba(255, 255, 255, 0.644) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
   content: "" !important;
   min-width: 100% !important;
   min-height: 100% !important;
@@ -341,6 +341,27 @@ nav li a:hover {
 
 /* Team section */
 
+.teamvisu > img {
+  width: 100%; 
+}
+
+.teaminfo h5 {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.6;
+}
+
+.teaminfo p {
+  font-size: 14px;
+  color: #626262;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  
+}
+  /* Team social HOVER */ 
 .teamvisu {
   position: relative;
 }
@@ -403,29 +424,6 @@ nav li a:hover {
   color: white;
 }
 
-.teamvisu > img {
-  width: 100%; 
-}
-
-.teaminfo h5 {
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1.6;
-}
-
-.teaminfo p {
-  font-size: 14px;
-  color: #626262;
-  line-height: 1.6;
-  font-weight: 300;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  
-}
-  /* Team social */ 
-
-
 
 /* Features */
 
@@ -463,3 +461,13 @@ nav li a:hover {
   margin-right: 30px;
 }
 
+/* PAGE TRIANGLE */
+
+.triangle {
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  transform: translateY(-216%) rotate(45deg);
+  position: absolute;
+  z-index: 999;
+}
