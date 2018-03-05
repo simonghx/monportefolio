@@ -341,8 +341,70 @@ nav li a:hover {
 
 /* Team section */
 
-.teamvisu > img {
+.teamvisu {
+  position: relative;
+}
+
+.teamitem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.teamvisu:hover .teamitem {
+  opacity: 1;
+}
+
+.teamitem-hover {
+  
+  position: absolute;
+  top: 54%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.social {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social li {
+  display: inline-block;
+  border: 1px solid black;
+  width : 28px; 
+  height: 28px;
+  margin: 0 8px;
+  transform: rotate(45deg); 
+}
+
+.social a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+.social a li svg {
+  transform: rotate(-45deg);
+  font-size: 14px;
+}
+
+.social  li:hover {
+  background-color: black;
+}
+
+.social  a li:hover {
+  color: white;
+}
+
+.teamvisu > img {
+  width: 100%; 
 }
 
 .teaminfo h5 {
@@ -361,6 +423,9 @@ nav li a:hover {
   margin-top: 0px;
   
 }
+  /* Team social */ 
+
+
 
 /* Features */
 
