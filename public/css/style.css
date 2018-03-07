@@ -14,6 +14,10 @@ body {
  margin-top : 25px;
 }
 
+.mt-60{
+  margin-top: 60px;
+}
+
 .mb-60 {
   margin-bottom: 60px;
 }
@@ -565,3 +569,47 @@ nav li a:hover {
 .mb-40neg {
   margin-bottom: -40px;
 }
+
+/* PORTFOLIO */
+
+#portfolio a {
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 13px;
+}
+
+#portfolio a:hover {
+  color: black;
+}
+
+
+#portfolio .nav-pills .nav-link.active, #portfolio .nav-pills .show>.nav-link {
+  background-color: transparent;
+  color: #17a697;
+}
+
+#portfolio .nav-pills .nav-link.active:hover, #portfolio .nav-pills .show>.nav-link:hover {
+  color: black;
+}
+
+.menu-gallery {
+  flex-direction: column;
+    display: flex;
+}
+
+.btn-portfolio a {
+  text-decoration: none;
+  color: #17a697 !important;
+  padding: 17px 30px;
+  border: 1px solid #17a697;
+  display: inline-block;
+}
+
+.btn-portfolio a:hover {
+  text-decoration: none;
+  background-color: #17a697;
+  color: white !important;
+}
+
