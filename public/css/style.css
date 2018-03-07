@@ -6,6 +6,10 @@ body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
+.w-300 {
+  width: 300px;
+}
+
 .mt-25 {
  margin-top : 25px;
 }
@@ -287,6 +291,7 @@ nav li a:hover {
   height: 100%;
   width: 100%;
 }
+
 #skills h1 {
   margin-bottom: 25px;
   font-weight: 500;
@@ -295,7 +300,7 @@ nav li a:hover {
   font-size: 22px;
 }
 
-#skills h6 {
+.upperbold-h6 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1;
@@ -467,9 +472,96 @@ nav li a:hover {
   content: "";
   height: 100px;
   width: 100px;
-  left: 47%;
+  left: 46%;
   background-color: #fff;
   transform: translateY(-216%) rotate(45deg);
   position: absolute;
   z-index: 999;
+}
+
+/* Commentaire CLIENT */
+
+#comment {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.bg-comment{
+  background-image: url("../images/15.jpg") !important;
+  display: block !important;
+  background-attachment: fixed !important;
+  background-position-x: center !important;
+  background-size: 100% !important;
+}
+
+.bg-comment::before {
+  background-color: rgba(34,34,34,0.85) !important;
+  content: "" !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  display: block !important;
+  position: absolute !important;
+}
+
+.clientspace {
+  position: relative;
+  z-index: 99;
+}
+
+#comment p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin : 0 130px;
+}
+
+.quote-icon, #comment .clientspace h2, #comment .clientspace p, #comment .clientspace h6 {
+  flex: 1;
+}
+
+.quote-icon {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-regular {
+  font-weight: 300;
+}
+
+.item, .item-active {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 100%;
+}
+
+.item {
+  background-color: white;
+  border: 1px solid black;
+  
+}
+
+.item-active {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.mb-40neg {
+  margin-bottom: -40px;
 }
