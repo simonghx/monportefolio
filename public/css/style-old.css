@@ -328,7 +328,7 @@ nav li a:hover {
 
 .skillbar-percent {
   float: right;
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 400;
   margin-top: 3px;
   font-size: 14px;
