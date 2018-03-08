@@ -592,7 +592,8 @@ nav li a:hover {
 
 #portfolio .nav-pills .nav-link.active:hover, #portfolio .nav-pills .show>.nav-link:hover {
   color: black;
-}
+} 
+/* changer la variable dasn Bootstrap */
 
 .menu-gallery {
   flex-direction: column;
