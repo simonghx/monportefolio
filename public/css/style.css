@@ -6552,36 +6552,35 @@ p {
       #header nav li a {
         text-decoration: none !important;
         color: rgba(34, 34, 34, 0.6);
-        font-size: 11px !important;
+        font-size: 10px !important;
         font-family: inherit !important;
-        letter-spacing: 1.6 !important;
+        letter-spacing: 1.6px !important;
+        font-weight: 300;
         text-transform: uppercase !important;
         padding: 37px 0 !important; }
         #header nav li a:hover {
           color: #222; }
-
-.logo {
-  flex: 1; }
-  .logo img {
-    width: 100px !important; }
-
-.menu {
-  flex: 1; }
-  @media only screen and (max-width: 1024px) {
-    .menu {
-      display: none !important; } }
-  .menu ul {
-    list-style: none !important;
-    display: flex !important;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    margin-top: auto !important;
-    margin-bottom: auto !important; }
-    .menu ul li:nth-child(2) a {
-      display: inline-block !important;
-      width: 54px !important;
-      padding-top: 39px !important;
-      padding-bottom: 36px !important; }
+    #header nav .logo {
+      flex: 1; }
+      #header nav .logo img {
+        width: 100px !important; }
+    #header nav .menu {
+      flex: 1; }
+      @media only screen and (max-width: 1024px) {
+        #header nav .menu {
+          display: none !important; } }
+      #header nav .menu ul {
+        list-style: none !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        align-items: center !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important; }
+        #header nav .menu ul li:nth-child(2) a {
+          display: inline-block !important;
+          width: 54px !important;
+          padding-top: 40px !important;
+          padding-bottom: 36px !important; }
 
 .toggleMenu {
   display: none !important; }
@@ -6767,7 +6766,7 @@ p {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1.6; }
+  letter-spacing: 1.6px; }
 .teaminfo p {
   font-size: 14px;
   color: #626262;
@@ -6897,7 +6896,7 @@ p {
     color: #222;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 1.6;
+    letter-spacing: 1.6px;
     font-size: 13px; }
     .menu-gallery a:hover {
       color: #222; }
@@ -6965,5 +6964,33 @@ p {
     flex: 1; }
     #iphone .features-container .features-icons svg {
       font-size: 40px; }
+
+#customers {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  #customers .container {
+    position: relative;
+    z-index: 99; }
+    #customers .container .customersplace {
+      display: flex; }
+      #customers .container .customersplace .customer-img {
+        flex: 1; }
+
+.bg-customers {
+  background-image: url("../images/13.jpg");
+  display: block !important;
+  background-attachment: fixed !important;
+  background-position-x: center !important;
+  background-size: 100% !important; }
+  .bg-customers::before {
+    background-color: rgba(34, 34, 34, 0.85) !important;
+    content: "" !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    display: block !important;
+    position: absolute !important; }
 
 /*# sourceMappingURL=style.css.map */
