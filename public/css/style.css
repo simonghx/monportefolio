@@ -6950,4 +6950,20 @@ p {
     display: block !important;
     position: absolute !important; }
 
+#iphone .features-container {
+  display: flex;
+  margin-bottom: 35px; }
+  #iphone .features-container .features-content {
+    flex: 4; }
+    #iphone .features-container .features-content h4 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+  #iphone .features-container .features-icons {
+    flex: 1; }
+    #iphone .features-container .features-icons svg {
+      font-size: 40px; }
+
 /*# sourceMappingURL=style.css.map */
