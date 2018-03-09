@@ -22,12 +22,12 @@
         color: rgba(34, 34, 34, 0.6)
         font-size: 11px !important
         font-family: inherit !important
-        letter-spacing: 1.6px !important
+        letter-spacing: $space-large !important
         text-transform: uppercase !important
         padding : 37px 0 !important
 
         &:hover
-          color: black
+          color: $dark
 
 .logo
   flex: 1
@@ -66,7 +66,7 @@
   span
     width: 20px !important
     height: 2px !important
-    background-color: black !important
+    background-color: $dark !important
     margin: 3px 0 !important
   
   div
@@ -95,14 +95,14 @@
 // BG HEADER
 
 .bg-header
-  background-image: url("../images/16.jpg") !important
+  background-image: $img-montagne !important
   display: block !important
   background-attachment: fixed !important
   background-position-x: center !important
   background-size: 100% !important
   
   &::before 
-    background-color: rgba(255, 255, 255, 0.4) !important
+    background-color: $overlight-white !important
     content: "" !important
     min-width: 100% !important
     min-height: 100% !important

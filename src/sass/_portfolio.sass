@@ -1,45 +1,32 @@
 // PORTFOLIO
 
-#portfolio
-  a
-    color: black
-    font-weight: 400
-    text-transform: uppercase
-    letter-spacing: 1.6px
-    font-size: 13px
-
-    &:hover
-      color: black
-
-  .nav-pills
-    .nav-link
-    .active
-      background-color: transparent
-      color: #17a697
-
-      &:hover
-        color: black
-    
-    .show >.nav-link
-      background-color: transparent
-      color: #17a697
-
-      &:hover
-        color: black
-// Changer la variable dans Bootstrap _nav
-
 .menu-gallery
   flex-direction: column
   display: flex
 
+  a
+    color: $dark
+    font-weight: $font-mid
+    text-transform: uppercase
+    letter-spacing: $space-large
+    font-size: 13px
+
+    &:hover
+      color: $dark
+
+  .nav-pills
+    .nav-link
+    .active:hover
+        color: $dark
+
 .btn-portfolio a 
   text-decoration: none
-  color: #17a697 !important
+  color: $success !important
   padding: 17px 30px
-  border: 1px solid #17a697
+  border: $button-box-success
   display: inline-block
 
   &:hover
     text-decoration: none
-    background-color: #17a697
+    background-color: $success
     color: white !important

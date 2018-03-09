@@ -7,8 +7,8 @@
 
   p
     color: white
-    font-size: 20px
-    font-weight: 400
+    font-size: $font-size-intro
+    font-weight: $font-mid
     margin : 0 130px
   
   .clientspace
@@ -23,14 +23,14 @@
 
 
 .bg-comment
-  background-image: url("../images/15.jpg") !important
+  background-image: $img-montagne2 !important
   display: block !important
   background-attachment: fixed !important
   background-position-x: center !important
   background-size: 100% !important
 
   &::before
-    background-color: rgba(34,34,34,0.85) !important
+    background-color: $overlight-dark !important
     content: "" !important
     min-width: 100% !important
     min-height: 100% !important
@@ -42,7 +42,7 @@
 
 .quote-icon
   flex: 1
-  border: 1px solid white
+  border: $button-box-light
   width: 40px
   height: 40px
   display: flex
@@ -57,15 +57,15 @@
   flex-direction: column
 
 .text-regular
-  font-weight: 300
+  font-weight: $font-fine
 
 .item
   background-color: white
-  border: 1px solid black
+  border: $button-box-dark
 
 .item-active
-  background-color: black
-  border: 1px solid white
+  background-color: $dark
+  border: $button-box-light
 
 .item,
 .item-active
