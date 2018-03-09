@@ -6820,4 +6820,143 @@ p {
   height: 40px;
   margin-right: 12px; }
 
+#comment {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  #comment p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 130px; }
+  #comment .clientspace {
+    position: relative;
+    z-index: 99; }
+    #comment .clientspace h2,
+    #comment .clientspace p,
+    #comment .clientspace h6 {
+      flex: 1; }
+
+.bg-comment {
+  background-image: url("../images/15.jpg") !important;
+  display: block !important;
+  background-attachment: fixed !important;
+  background-position-x: center !important;
+  background-size: 100% !important; }
+  .bg-comment::before {
+    background-color: rgba(34, 34, 34, 0.85) !important;
+    content: "" !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    display: block !important;
+    position: absolute !important; }
+
+.quote-icon {
+  flex: 1;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.comment-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.text-regular {
+  font-weight: 300; }
+
+.item {
+  background-color: white;
+  border: 1px solid black; }
+
+.item-active {
+  background-color: black;
+  border: 1px solid white; }
+
+.item,
+.item-active {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 100%; }
+
+.mb-40neg {
+  margin-bottom: -40px; }
+
+#portfolio a {
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 13px; }
+  #portfolio a:hover {
+    color: black; }
+#portfolio .nav-pills .active {
+  background-color: transparent;
+  color: #17a697; }
+  #portfolio .nav-pills .active:hover {
+    color: black; }
+#portfolio .nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: #17a697; }
+  #portfolio .nav-pills .show > .nav-link:hover {
+    color: black; }
+
+.menu-gallery {
+  flex-direction: column;
+  display: flex; }
+
+.btn-portfolio a {
+  text-decoration: none;
+  color: #17a697 !important;
+  padding: 17px 30px;
+  border: 1px solid #17a697;
+  display: inline-block; }
+  .btn-portfolio a:hover {
+    text-decoration: none;
+    background-color: #17a697;
+    color: white !important; }
+
+#facts {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  #facts .container {
+    position: relative;
+    z-index: 999; }
+    #facts .container .icon-counter {
+      font-size: 50px;
+      display: inline-block; }
+    #facts .container .counter-content {
+      display: inline-block; }
+      #facts .container .counter-content .counter-title {
+        font-size: 60px !important;
+        font-weight: 300; }
+      #facts .container .counter-content .counter-sub-title {
+        text-transform: uppercase;
+        font-size: 14px; }
+
+.bg-facts {
+  background-image: url("../images/14.jpg") !important;
+  display: block !important;
+  background-attachment: fixed !important;
+  background-position-x: center !important;
+  background-size: 100% !important; }
+  .bg-facts::before {
+    background-color: rgba(34, 34, 34, 0.85) !important;
+    content: "" !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    display: block !important;
+    position: absolute !important; }
+
 /*# sourceMappingURL=style.css.map */
