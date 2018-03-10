@@ -6510,7 +6510,7 @@ body {
 .soustitre h1 {
   font-size: 44px !important;
   color: #222 !important;
-  font-weight: 500 !important;
+  font-weight: 300;
   margin-top: 0px !important;
   line-height: 1.6 !important;
   margin-bottom: 15px !important; }
@@ -6923,6 +6923,8 @@ p {
   #facts .container {
     position: relative;
     z-index: 999; }
+    #facts .container .facts-title h2 {
+      font-weight: 300; }
     #facts .container .icon-counter {
       font-size: 50px;
       display: inline-block; }
@@ -6974,6 +6976,8 @@ p {
   #customers .container {
     position: relative;
     z-index: 99; }
+    #customers .container .title-customer h2 {
+      font-weight: 300; }
     #customers .container .customersplace {
       display: flex; }
       #customers .container .customersplace .customer-img {
@@ -7038,5 +7042,18 @@ p {
   #adresse p {
     color: white;
     font-size: 20px; }
+
+#footer .copyright {
+  line-height: 1.9; }
+#footer a {
+  color: #222;
+  text-decoration: none; }
+  #footer a:hover {
+    color: #17a697;
+    text-decoration: none; }
+#footer .copy-link {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
