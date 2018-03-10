@@ -7028,4 +7028,15 @@ p {
   #contact a:hover {
     background-color: #17a697; }
 
+#adresse {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #222; }
+  #adresse svg {
+    color: #17a697;
+    font-size: 40px; }
+  #adresse p {
+    color: white;
+    font-size: 20px; }
+
 /*# sourceMappingURL=style.css.map */
